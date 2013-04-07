@@ -75,14 +75,14 @@ filemanager.prototype = {
         this.enterDir($('hideDirectory').value);
     },
     makedir:function (){
-        var v=prompt("Nom du nouveau repertoire","");
+        var v=prompt("Directory name","");
         if (v!=null){
             Debugger.DEBUG("makedir > "+v);
             this.manageFile("newdir",v+"&directory="+$("hideDirectory").value)
         }
     },
     deletefile:function(file){
-        var v=confirm("Voulez vous vraiment effacer ce fichier ?");
+        var v=confirm("Do you want delete this file ?");
         if (v){
             this.manageFile("delete",file);
         }
@@ -90,7 +90,7 @@ filemanager.prototype = {
     renamefile:function (fileWork){
         var file		= fileWork.substr(fileWork.lastIndexOf("/")+1,fileWork.length);
         var directory	= tmpFile.substr(0,fileWork.lastIndexOf("/")+1);
-        var v=prompt("Vous pouvez renommer ce fichier",file);
+        var v=prompt("New name",file);
         if (v!=null){
             this.manageFile("rename",directory+v+"&old="+fileWork)
         }
@@ -127,7 +127,7 @@ filemanager.prototype = {
     uploadFile:function(){
         var winUpload = new Window({
             className: "filemanager",
-            title: "Chargement de fichier",
+            title: "Upload file",
             width:300,
             height:20,
             resizable:false,
@@ -159,7 +159,7 @@ filemanager.prototype = {
     },
 
     zipCurrentDir:function (){
-        var v=confirm("Etes vous sur de vouloir zipper le repertoire courrant ?");
+        var v=confirm("Do you want zip this directory ?");
         if (v==true){
             if ($F('hideDirectory').lastIndexOf("/")!=-1){
                 var dirName=$F('hideDirectory').substr(0,$F('hideDirectory').lastIndexOf("/"));
@@ -175,7 +175,7 @@ filemanager.prototype = {
         }
     },
     ZipFile:function (d,f){
-        var v=confirm("Etes vous sur de vouloir zipper "+f+" ?");
+        var v=confirm("Do you want to zip "+f+" ?");
         if (v==true){
             var myAjax = new Ajax.Request('includes/php/filemanager/zip.php?dir='+d+'&file='+f,{
                 method: 'get',
