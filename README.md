@@ -45,6 +45,8 @@ And this to your bottom body
 </script>
 ~~~
 
+/!\ You need to create a directory called "directory" in chmod 0777
+
 To open FileManger
 ~~~
 filemanagerObj.openFileManager();
