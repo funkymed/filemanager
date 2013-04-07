@@ -59,3 +59,5 @@ To hide the debug window
 ~~~
 Debugger.toggleDebug();
 ~~~
+
+In the directory includes/swf you will found the source code in a .rar file of my uploader in swf
