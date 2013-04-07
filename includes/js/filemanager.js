@@ -35,7 +35,7 @@ filemanager.prototype = {
                 +"<div id='file_manager'></div>";
         winFileManager = new Window({
             className: "filemanager",
-            title: "Files Manager",
+            title: "FileManager",
             width:528,
             height:350,
             resizable:false,
