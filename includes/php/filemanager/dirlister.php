@@ -19,7 +19,8 @@
 		}
 		
 		function enterDir($setdossier=null){
-			$this->dossier=$dossier.$setdossier;
+			//$this->dossier=$dossier.$setdossier;
+			$this->dossier=$setdossier;
 		}
 		
 		function update_dir(){

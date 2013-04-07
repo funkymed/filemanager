@@ -1,5 +1,5 @@
 <?php
-	include "configtool.php";
+	//include "configtool.php";
 
 	$buffer='';
 	if (isset($_POST['upload'])){
@@ -14,7 +14,7 @@
         $buffer.='</div>';
 	}
 	print $buffer;
-	print_r($_FILES);
-	print_r($_POST);
+	//print_r($_FILES);
+	//print_r($_POST);
 
 ?>

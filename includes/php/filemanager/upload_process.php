@@ -2,7 +2,7 @@
 	
 	print_r($_GET);
 	
-	$uploaddir = "../../../../".$_GET['dir'];
+	$uploaddir = "../../../".$_GET['dir'];
 	
 	if ($_FILES['Filedata']){
 		$extension_fichier = strtolower( array_pop( explode( ".", $_FILES['Filedata']['name'] ) ) ) ;

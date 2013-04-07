@@ -141,7 +141,7 @@ filemanager.prototype = {
         flahsImage = new FlashTag("includes/swf/filemanagerUpload.swf", "300", "20","ffffff","8,0,0,0");
         flahsImage.setFlashvars("currentdir="+$('hideDirectory').value+"&callBack=filemanagerObj.onUploadFinished('"+String(winFileManagerUpload.length)+"',{file})");
         winUpload.getContent().innerHTML = "<div>"+flahsImage.toString()+"</div>";
-        winUpload.setConstraint(true, {left:0, right:0, top: 0, bottom:0})
+        winUpload.setConstraint(true, {left:0, right:0, top: 0, bottom:0});
         winUpload.setZIndex(100);
 
 
