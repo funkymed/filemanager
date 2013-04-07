@@ -21,11 +21,11 @@ filemanager.prototype = {
                 +"<div id='iconFileManager'>"
                 +"<table>"
                 +"<tr>"
-                +"<td><div onclick=\"filemanagerObj.enterDir($('parentDirectory').value);\" class=\"icon\"><img src=\"images/file_manager/filemanager_parent.gif\" title=\"Repertoire precedent\"/></div></td>"
-                +"<td><div onclick=\"filemanagerObj.makedir();\" class=\"icon\"><img src=\"images/file_manager/filemanager_newdir.gif\" title=\"Creer un nouveau repertoire\"/></div></td>"
-                +"<td><div onclick=\"filemanagerObj.uploadFile();\" class=\"icon\"><img src=\"images/file_manager/filemanager_loadfile.gif\" title=\"Charger un fichier\"/></div></td>"
-                +"<td><div onclick=\"filemanagerObj.refresh();\" class=\"icon\"><img src=\"images/file_manager/filemanager_refresh.gif\" title=\"Actualiser\"/></div></td>"
-                +"<td><div onclick=\"filemanagerObj.zipCurrentDir();\" class=\"icon\"><img src=\"images/file_manager/filemanager_zip.gif\" title=\"Zipper le repertoire courant\"/></div></td>"
+                +"<td><div onclick=\"filemanagerObj.enterDir($('parentDirectory').value);\" class=\"icon\"><img src=\"images/file_manager/filemanager_parent.gif\" title=\"Parent directory\"/></div></td>"
+                +"<td><div onclick=\"filemanagerObj.makedir();\" class=\"icon\"><img src=\"images/file_manager/filemanager_newdir.gif\" title=\"Make new directory\"/></div></td>"
+                +"<td><div onclick=\"filemanagerObj.uploadFile();\" class=\"icon\"><img src=\"images/file_manager/filemanager_loadfile.gif\" title=\"Upload a file\"/></div></td>"
+                +"<td><div onclick=\"filemanagerObj.refresh();\" class=\"icon\"><img src=\"images/file_manager/filemanager_refresh.gif\" title=\"Refresh\"/></div></td>"
+                +"<td><div onclick=\"filemanagerObj.zipCurrentDir();\" class=\"icon\"><img src=\"images/file_manager/filemanager_zip.gif\" title=\"Zip current directory\"/></div></td>"
                 +"</tr>"
                 +"</table>"
                 +"</div>"
@@ -35,7 +35,7 @@ filemanager.prototype = {
                 +"<div id='file_manager'></div>";
         winFileManager = new Window({
             className: "filemanager",
-            title: "Gestionnaire de fichier",
+            title: "Files Manager",
             width:528,
             height:350,
             resizable:false,
