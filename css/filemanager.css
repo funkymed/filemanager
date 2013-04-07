@@ -1,0 +1,31 @@
+/*GESTIONNAIRE DE FICHIER*/
+
+	#file_manager{margin:0px;padding:0px;border:0px red solid;width:100%;height:375px;border-collapse:collapse;border:0px;}
+	#FileManager{width:100%;}
+	#FileManager .retour{background-color:#ff5555;font-family:Helvetica;Font-size:8pt;font-weight:bold;color:white;}
+	#FileManager .entete{background-color:#ccc;font-family:Helvetica;Font-size:8pt;font-weight:bold;color:black;}
+	#FileManager .dir{background-color:#eee;font-family:Helvetica;Font-size:8pt;font-weight:bold;color:black;}
+	#FileManager .dir_over{background-color:#333;font-family:Helvetica;Font-size:8pt;font-weight:bold;color:white;cursor:pointer;}
+	#FileManager .tr_Info_line1{background-color:#eee;font-family:Helvetica;Font-size:8pt;color:#333;}
+	#FileManager .tr_Info_line2{background-color:#eee;font-family:Helvetica;Font-size:8pt;color:#333;}
+	#FileManager td{padding:2px;}
+	#FileManager .tr_Info_over{background-color:#333;font-family:Helvetica;Font-size:8pt;color:white;cursor:pointer;}
+	#FileManager #title td{padding:2px;height:20px;background-color:#555;color:white;font-family:Helvetica;Font-size:8pt;width:33%;}
+	#FileManager input{margin:0px;padding:0px;}
+	#FileManager table{border-collapse:collapse;}
+	#ongletFileManager {background-color:#eee;position:absolute;top:120px;left:-460px;z-index:2;width:450px;height:450px;border:2px #555 solid;}
+	#ongletFileManager .clear { clear: both;}
+	#iconFileManager{padding:2px;}
+	#iconFileManager .icon{cursor:pointer;}
+	#directoryPathInfo{width:100%;border:0px #eee solid;background-color:#555;color:#eee;font-family:Helvetica;Font-size:9pt;}
+	#iFrameUploader{width: 400px; height: 100px;border:2px red solid;}
+	#dragFileManager{ background-color:#333;}
+	#dragFileManager .title{color:white;font-weight:bold;font-family:Helvetica;Font-size:9pt;}
+	#iconFileManager table{margin:0px;padding:0px;border-collapse:collapse;}
+	#filecontainer{width:300px;}
+	
+	#Menulist{border:1px #aaa solid;background-color:#eee;position:absolute;z-index:500;margin:0px;padding:5px;}
+	#Menulist .title{font-family:Helvetica;font-size:9pt;margin:0px;padding:2px;display:block;font-weight:bold;background-color:#ffbb00;color:white;}
+	#Menulist a{margin:0px;padding:2px;font-family:Helvetica;font-size:8pt;display:block;padding-top:0px; padding-bottom: 0px; background-color:#eee;color:black;text-decoration:none;}
+	#Menulist a:hover{display:block;padding-top:0px; padding-bottom: 0px;color:white;background-color:#55bbff;text-decoration:none;}
+	#Menulist hr{border:1px #ccc solid;}

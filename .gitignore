@@ -1,0 +1,7 @@
+directory/*
+.idea/.name
+.idea/encodings.xml
+*.xml
+.idea/webservicesjs.iml
+php.ini
+.DS_Store

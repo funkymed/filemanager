@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>FileManager</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link type="text/css" rel="stylesheet" href="css/filemanager.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/debug.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/themes/default.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/themes/filemanager.css" media="screen" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="//twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body{
+            background: #efefef;
+        }
+        .box{
+            border: 4px white solid;
+            padding:15px;
+        }
+        .box strong{
+            min-width: 150px;
+        }
+    </style>
+    <meta name="robots" content="index, follow" />
+    
+</head>
+<body onload="prettyPrint();">
+
+<div class="row-fluid">
+    <div class="container">
+        <div class="span12">
+            <div class="intro">
+                <h1>FileManager</h1>
+                <p>
+                    Manage your files on your server<br />
+                    <span class="label label-info">&nbsp;&gt; PrototypeJS = FileManager</span>
+                </p>
+                <p>
+                    This is an old project from 2007
+                </p>
+
+                Project on GitHub : <a href="https://github.com/funkymed/filemanager">https://github.com/funkymed/filemanager</a>
+            </div>
+            <div >
+                <div >
+                    <ul>
+                        <li><a href="#author">Author</a></li>
+                        <li><a href="#doc">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <a name="author"></a>
+                <h4>Author</h4>
+                <div>
+                    <p>
+                        Cyril Pereira<br />
+                        <a target="_blank" href="http://www.cyrilpereira.com">http://www.cyrilpereira.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <a name="doc"></a><h4>Documentation</h4>
+                <div>
+                    <p>To initialize it you have to add this to your header page</p>
+
+<pre class="prettyprint linenums html">&lt;link type="text/css" rel="stylesheet" href="css/filemanager.css" media="screen" /&gt;
+&lt;link type="text/css" rel="stylesheet" href="css/debug.css" media="screen" /&gt;
+&lt;link type="text/css" rel="stylesheet" href="css/themes/default.css" media="screen" /&gt;
+&lt;link type="text/css" rel="stylesheet" href="css/themes/filemanager.css" media="screen" /&gt;
+</pre>
+
+                    <p>And this to your bottom body</p>
+                    <pre class="prettyprint linenums">&lt;script type="text/javascript" src="includes/js/protoculous-packer.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="includes/js/debugger.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="includes/js/window.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="includes/js/FlashTag.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="includes/js/filemanager.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+
+    var Debugger=new Object(),
+        filemanagerObj = new Object();
+
+    window.onload=function()
+    {
+        Debugger=new debugg();
+        filemanagerObj	= new filemanager();
+        filemanagerObj.openFileManager();
+
+    }
+&lt;/script&gt;</pre>
+
+                    <p>To open FileManger</p>
+                    <pre class="prettyprint linenums">filemanagerObj.openFileManager();</pre>
+
+                    <p>To close FileManger</p>
+                    <pre class="prettyprint linenums">filemanagerObj.closeFileManager();</pre>
+
+                    <p>To hide the debug window</p>
+                    <pre class="prettyprint linenums">Debugger.toggleDebug();</pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript" src="includes/js/protoculous-packer.js"></script>
+<script type="text/javascript" src="includes/js/debugger.js"></script>
+<script type="text/javascript" src="includes/js/window.js"></script>
+<script type="text/javascript" src="includes/js/FlashTag.js"></script>
+<script type="text/javascript" src="includes/js/filemanager.js"></script>
+
+<script type="text/javascript">
+
+    var Debugger=new Object(),
+        filemanagerObj = new Object();
+
+    window.onload=function()
+    {
+        Debugger=new debugg();
+        filemanagerObj	= new filemanager();
+        filemanagerObj.openFileManager();
+
+    }
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-944839-15']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>

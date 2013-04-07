@@ -1,0 +1,34 @@
+.debugDiv {
+    font-family: Helvetica;
+    font-size: 7pt;
+    color: black;
+    padding: 0px;
+    background: #eee;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    filter: alpha(opacity = 80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    padding: 5px;
+    z-index: 3000;
+    border: 1px black solid;
+}
+
+.debugTxt {
+    overflow: auto;
+    height: 175px;
+}
+
+.dragdebug {
+    display: block;
+    background: white;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 8pt;
+    text-align: right;
+}
