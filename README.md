@@ -8,7 +8,7 @@ GitHub : https://github.com/funkymed/selectfile
 
 ##Demo
 
-http://www.cyrilpereira.com/selectfile/
+http://www.cyrilpereira.com/filemanager/
 
 ##Author
 
