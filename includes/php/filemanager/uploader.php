@@ -1,4 +1,4 @@
-<?	
+<?php
 	include "configtool.php";
 
 	$buffer='';

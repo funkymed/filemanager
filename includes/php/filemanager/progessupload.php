@@ -1,4 +1,5 @@
-<?session_start();
+<?php
+    session_start();
 	$buffer='';
 	if (file_exists($_SESSION['upload']['tmp_name'])){
 		$currentsize=filesize($_SESSION['upload']['tmp_name']);

@@ -1,4 +1,3 @@
-
 <div onmouseover="if(ThumbTimeoutHide){clearInterval(ThumbTimeoutHide);}" onmouseout="ThumbTimeoutHide=setTimeout(function(){$('Menulist').hide();},100);" style="width:150px;">
 	<a href="javascript:filemanagerObj.renamefile('<?php echo $_GET['dir'].$_GET['file']; ?>');">Renommer</a>
 	<a href="javascript:filemanagerObj.deletefile('<?php echo $_GET['dir'].$_GET['file']; ?>');">Effacer</a>

@@ -1,5 +1,5 @@
-<?
-	$dir_root="../../../../";
+<?php
+	$dir_root="../../../";
 	$dirinclude="includes/php/filemanager/";
 	
 	require_once('pclzip.lib.php');
