@@ -16,8 +16,6 @@ Cyril Pereira http://www.cyrilpereira.com
 
 ##Documentation
 
-Documentation
-
 To initialize it you have to add this to your header page
 ~~~
 <link type="text/css" rel="stylesheet" href="css/filemanager.css" media="screen" />
