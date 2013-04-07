@@ -191,6 +191,7 @@ filemanager.prototype = {
         });
     },
     DownloadFile:function(f){
-        window.open("../"+escape(f), "_blank");
+        //window.open("../"+escape(f), "_blank");
+        window.open(escape(f), "_blank");
     }
 }
